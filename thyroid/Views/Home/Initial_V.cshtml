@@ -1,0 +1,79 @@
+﻿@model thyroid.Models.Person
+
+@{
+    ViewBag.Title = "عناصر داده اولیه";
+    Layout = "~/Views/_LayoutPage2.cshtml";
+}
+
+<div style="border:2px solid lightblue;margin:4px">
+    <i style="margin-right:5px;font-weight:bold;">عناصر داده اولیه</i>
+    <div class="row" style="margin-bottom:1px">
+        <div class="col-sm-3">
+            <div class="form-group">
+                @Html.LabelFor(model => model.person_init.birth_weight, htmlAttributes: new { @class = "control-label col-md-5" })
+                <div class="col-md-7">
+                    @Html.EditorFor(model => model.person_init.birth_weight, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.person_init.birth_weight, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="form-group">
+                @Html.LabelFor(model => model.person_init.birth_height, htmlAttributes: new { @class = "control-label col-md-5" })
+                <div class="col-md-7">
+                    @Html.EditorFor(model => model.person_init.birth_height, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.person_init.birth_height, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 ">
+            <div class="form-group">
+                @Html.LabelFor(model => model.person_init.birth_head, htmlAttributes: new { @class = "control-label col-md-5" })
+                <div class="col-md-7">
+                    @Html.EditorFor(model => model.person_init.birth_head, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.person_init.birth_head, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+        </div>
+
+    <div class="row" style="margin-bottom:1px">
+        <div class="col-sm-3 ">
+            <div class="form-group">
+                @Html.LabelFor(model => model.person_init.frst_sample, htmlAttributes: new { @class = "control-label col-md-5" })
+                <div class="col-md-7">
+                    @Html.EditorFor(model => model.person_init.frst_sample, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.person_init.frst_sample, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 ">
+            <div class="form-group">
+                @Html.LabelFor(model => model.person_init.init_age, htmlAttributes: new { @class = "control-label col-md-5" })
+                <div class="col-md-7">
+                    @Html.EditorFor(model => model.person_init.init_age, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.person_init.init_age, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3" style="text-align:center;margin-top:6px">
+            <button class="btn-success " type="submit" name="sabt"><i class="glyphicon glyphicon-ok"></i> ذخیره </button>
+        </div>
+    </div>
+</div>
+
+<div style="border:2px solid lightblue;margin:4px">
+<i style="margin-right:5px;font-weight:bold;">مراقبتها</i>
+    <div>
+      جدول مراقبتها و وزون و قد و غیره با امکان اضافه کردن در این قسمت قرار می گیرد
+    </div>
+    </div>
+
+
+
+
+

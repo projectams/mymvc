@@ -1,0 +1,57 @@
+﻿@using thyroid.Models
+@model Person
+@{
+    ViewBag.Title = "خانه";
+}
+
+<div class="row col-sm-offset-3">
+    <div class="col-md-8">
+        <section id="menupage">           
+@using (Html.BeginForm())
+{
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })           
+                <div class="form-group">
+                    @Html.LabelFor(m => m.person_demog.melicode, new { @class = "col-md-2 control-label" })
+                    <div class="col-md-10" >
+                        @Html.TextBoxFor(m => m.person_demog.melicode, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.person_demog.melicode, "", new { @class = "text-danger" })                        
+                        <button class="btn btn-info form-control" type="submit" name="srchmelicode" style="margin-top:10px" ><i class="glyphicon glyphicon-search"></i> جستجو بر اساس کد ملی </button>                       
+                        <hr/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(m => m.person_demog.fname, new { @class = "col-md-2 control-label" })
+                    <div class="col-md-10" style="margin-bottom:6px">
+                        @Html.PasswordFor(m => m.person_demog.fname, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.person_demog.fname, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group" >
+                    @Html.LabelFor(m => m.person_demog.family, new { @class = "col-md-2 control-label" })
+                    <div class="col-md-10">
+                        @Html.PasswordFor(m => m.person_demog.family, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.person_demog.family, "", new { @class = "text-danger" })
+                        <button class="btn btn-info form-control" type="submit" name="srchnamef" style="margin-top:10px"><i class="glyphicon glyphicon-search"></i> جستجو بر اساس نام و نام خانوادگی </button>                       
+                        <hr/>
+                    </div>
+                </div>
+
+    
+              
+      <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10" style="text-align:center">
+                        <hr />
+                        <button class="btn btn-info form-control" type="submit" name="sabt" style="margin-top:10px"><i class="glyphicon glyphicon-ok"></i> ثبت مورد جدید </button>                  
+                        دکمه ثبت مورد جدید را برای رفتن به صفحه بعد بزنید
+                        <button class="btn btn-info form-control" type="submit" name="showall" style="margin-top:10px"><i class="glyphicon glyphicon-ok"></i> مشاهده همه </button>                  
+                        <hr />
+                    </div>
+                </div>
+
+}
+</section>
+    </div>
+</div>
+
+

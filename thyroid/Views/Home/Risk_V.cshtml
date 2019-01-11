@@ -1,0 +1,328 @@
+﻿@model thyroid.Models.Person
+
+@{
+    ViewBag.Title = "ریسک فاکتورها";
+    Layout = "~/Views/_LayoutPage2.cshtml";
+}
+
+<div style="border:2px solid lightblue;margin:4px">
+    <i style="margin-right:5px;font-weight:bold;">ریسک فاکتورهای بیماری کم کاری مادرزادی تیروئید</i>
+    <div class="row" style="margin-bottom:1px">
+        <div class="col-sm-3">
+            <div class="form-group">
+                @Html.LabelFor(model => model.person_risk.child_weight, htmlAttributes: new { @class = "control-label col-md-5" })
+                <div class="col-md-7">
+                    @Html.EditorFor(model => model.person_risk.child_weight, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.person_risk.child_weight, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-sm-3 ">
+            <div class="form-group">
+                @Html.LabelFor(model => model.person_risk.pregnancy_no, htmlAttributes: new { @class = "control-label col-md-5" })
+                <div class="col-md-7">
+                    @Html.EditorFor(model => model.person_risk.pregnancy_no, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.person_risk.pregnancy_no, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col-sm-3 ">
+            <div class="form-group">
+                @Html.LabelFor(model => model.person_risk.pregnancy_m_age, htmlAttributes: new { @class = "control-label col-md-5" })
+                <div class="col-md-7">
+                    @Html.EditorFor(model => model.person_risk.pregnancy_m_age, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.person_risk.pregnancy_m_age, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 ">
+            <div class="form-group">
+                @Html.LabelFor(model => model.person_risk.pregnancy_duration, htmlAttributes: new { @class = "control-label col-md-5" })
+                <div class="col-md-7">
+                    @Html.EditorFor(model => model.person_risk.pregnancy_duration, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.person_risk.pregnancy_duration, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="margin-bottom:1px">
+
+        <div class="col-sm-3">
+            <div class="form-group">
+                @Html.LabelFor(model => model.person_risk.child_sex, htmlAttributes: new { @class = "control-label col-md-4" })
+                <div class="col-md-8">
+                    @*    @Html.EditorFor(model => model.person_etiology.evolotion_disorder, new { htmlAttributes = new { @class = "form-control" } })*@
+                    @Html.RadioButtonFor(model => model.person_risk.child_sex, new { htmlAttributes = new { @class = "form-control" } })
+                    پسر
+                    @Html.RadioButtonFor(model => model.person_risk.child_sex, new { htmlAttributes = new { @class = "form-control" } })
+                    دختر
+                    @Html.ValidationMessageFor(model => model.person_risk.child_sex, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="form-group">
+                @Html.LabelFor(model => model.person_risk.iod_shortage, htmlAttributes: new { @class = "control-label col-md-5" })
+                <div class="col-md-7">
+                    @Html.RadioButtonFor(model => model.person_risk.iod_shortage, new { htmlAttributes = new { @class = "form-control" } })
+                    دارد
+                    @Html.RadioButtonFor(model => model.person_risk.iod_shortage, new { htmlAttributes = new { @class = "form-control" } })
+                    ندارد
+                    @Html.ValidationMessageFor(model => model.person_risk.iod_shortage, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 ">
+            <div class="form-group">
+                @Html.LabelFor(model => model.person_risk.family_marriage, htmlAttributes: new { @class = "control-label col-md-5" })
+                <div class="col-md-7">
+                    @Html.RadioButtonFor(model => model.person_risk.family_marriage, new { htmlAttributes = new { @class = "form-control" } })
+                    بله
+                    @Html.RadioButtonFor(model => model.person_risk.family_marriage, new { htmlAttributes = new { @class = "form-control" } })
+                    خیر
+                    @Html.ValidationMessageFor(model => model.person_risk.family_marriage, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="col-sm-3">
+            <div class="form-group">
+                @Html.LabelFor(model => model.person_risk.mother_disease, htmlAttributes: new { @class = "control-label col-md-5" })
+                <div class="col-md-7">
+                    @Html.RadioButtonFor(model => model.person_risk.mother_disease, new { htmlAttributes = new { @class = "form-control" } })
+                    دارد
+                    @Html.RadioButtonFor(model => model.person_risk.mother_disease, new { htmlAttributes = new { @class = "form-control" } })
+                    ندارد
+                    @Html.ValidationMessageFor(model => model.person_risk.mother_disease, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row" style="margin-bottom:1px">
+        <div class="col-sm-3">
+            <div class="form-group">
+                @Html.LabelFor(model => model.person_risk.child_yellow, htmlAttributes: new { @class = "control-label col-md-5" })
+                <div class="col-md-7">
+                    @Html.RadioButtonFor(model => model.person_risk.child_yellow, new { htmlAttributes = new { @class = "form-control" } })
+                    دارد
+                    @Html.RadioButtonFor(model => model.person_risk.child_yellow, new { htmlAttributes = new { @class = "form-control" } })
+                    ندارد
+                    @Html.ValidationMessageFor(model => model.person_risk.child_yellow, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="form-group">
+                @Html.LabelFor(model => model.person_risk.twin_child, htmlAttributes: new { @class = "control-label col-md-5" })
+                <div class="col-md-7">
+                    @Html.RadioButtonFor(model => model.person_risk.twin_child, new { htmlAttributes = new { @class = "form-control" } })
+                    هست
+                    @Html.RadioButtonFor(model => model.person_risk.twin_child, new { htmlAttributes = new { @class = "form-control" } })
+                    نیست
+                    @Html.ValidationMessageFor(model => model.person_risk.twin_child, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 ">
+            <div class="form-group">
+                @Html.LabelFor(model => model.person_risk.birth_season, htmlAttributes: new { @class = "control-label col-md-5" })
+                <div class="col-md-7">
+                    @Html.DropDownListFor(model => model.person_risk.birth_season, new[] {
+new SelectListItem() {Text = "بهار",
+Value = bool.TrueString},
+new SelectListItem() {Text = "تابستان",
+Value = bool.FalseString},
+new SelectListItem() {Text = "پائیز",
+Value = bool.FalseString},
+new SelectListItem() {Text = "زمستان",
+Value = bool.FalseString}
+}, "انتخاب کنید", new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.person_risk.birth_season, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 ">
+            <div class="form-group">
+                @Html.LabelFor(model => model.person_risk.spec_drug, htmlAttributes: new { @class = "control-label col-md-5" })
+                <div class="col-md-7">
+                    @Html.RadioButtonFor(model => model.person_risk.spec_drug, new { htmlAttributes = new { @class = "form-control" } })
+                    بله
+                    @Html.RadioButtonFor(model => model.person_risk.spec_drug, new { htmlAttributes = new { @class = "form-control" } })
+                    خیر
+                    @Html.ValidationMessageFor(model => model.person_risk.spec_drug, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="margin-bottom:1px">
+        <div class="col-sm-3">
+            <div class="form-group">
+                @Html.LabelFor(model => model.person_risk.lab_method_improve, htmlAttributes: new { @class = "control-label col-md-5" })
+                <div class="col-md-7">
+                    @Html.RadioButtonFor(model => model.person_risk.lab_method_improve, new { htmlAttributes = new { @class = "form-control" } })
+                    بله
+                    @Html.RadioButtonFor(model => model.person_risk.lab_method_improve, new { htmlAttributes = new { @class = "form-control" } })
+                    خیر
+                    @Html.ValidationMessageFor(model => model.person_risk.lab_method_improve, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="form-group">
+                @Html.LabelFor(model => model.person_risk.down_sandrome, htmlAttributes: new { @class = "control-label col-md-5" })
+                <div class="col-md-7">
+                    @Html.RadioButtonFor(model => model.person_risk.down_sandrome, new { htmlAttributes = new { @class = "form-control" } })
+                    بله
+                    @Html.RadioButtonFor(model => model.person_risk.down_sandrome, new { htmlAttributes = new { @class = "form-control" } })
+                    خیر
+                    @Html.ValidationMessageFor(model => model.person_risk.down_sandrome, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 ">
+            <div class="form-group">
+                @Html.LabelFor(model => model.person_risk.liver_hemangiom, htmlAttributes: new { @class = "control-label col-md-5" })
+                <div class="col-md-7">
+                    @Html.RadioButtonFor(model => model.person_risk.liver_hemangiom, new { htmlAttributes = new { @class = "form-control" } })
+                    بله
+                    @Html.RadioButtonFor(model => model.person_risk.liver_hemangiom, new { htmlAttributes = new { @class = "form-control" } })
+                    خیر
+                    @Html.ValidationMessageFor(model => model.person_risk.liver_hemangiom, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 ">
+            <div class="form-group">
+                @Html.LabelFor(model => model.person_risk.pregnancy_diabet, htmlAttributes: new { @class = "control-label col-md-5" })
+                <div class="col-md-7">
+                    @Html.RadioButtonFor(model => model.person_risk.pregnancy_diabet, new { htmlAttributes = new { @class = "form-control" } })
+                    بله
+                    @Html.RadioButtonFor(model => model.person_risk.pregnancy_diabet, new { htmlAttributes = new { @class = "form-control" } })
+                    خیر
+                    @Html.ValidationMessageFor(model => model.person_risk.pregnancy_diabet, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="margin-bottom:1px">
+        <div class="col-sm-3">
+            <div class="form-group">
+                @Html.LabelFor(model => model.person_risk.child_birth_type , htmlAttributes: new { @class = "control-label col-md-5" })
+                <div class="col-md-7">
+                    @Html.RadioButtonFor(model => model.person_risk.child_birth_type, new { htmlAttributes = new { @class = "form-control" } })
+                    طبیعی
+                    @Html.RadioButtonFor(model => model.person_risk.child_birth_type, new { htmlAttributes = new { @class = "form-control" } })
+                    سزارین
+                    @Html.ValidationMessageFor(model => model.person_risk.child_birth_type, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="form-group">
+                @Html.LabelFor(model => model.person_risk.child_blood_rec, htmlAttributes: new { @class = "control-label col-md-5" })
+                <div class="col-md-7">
+                    @Html.RadioButtonFor(model => model.person_risk.child_blood_rec, new { htmlAttributes = new { @class = "form-control" } })
+                    بله
+                    @Html.RadioButtonFor(model => model.person_risk.child_blood_rec, new { htmlAttributes = new { @class = "form-control" } })
+                    خیر
+                    @Html.ValidationMessageFor(model => model.person_risk.child_blood_rec, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 ">
+            <div class="form-group">
+                @Html.LabelFor(model => model.person_risk.anty_thyr_drug, htmlAttributes: new { @class = "control-label col-md-5" })
+                <div class="col-md-7">
+                    @Html.RadioButtonFor(model => model.person_risk.anty_thyr_drug, new { htmlAttributes = new { @class = "form-control" } })
+                    بله
+                    @Html.RadioButtonFor(model => model.person_risk.anty_thyr_drug, new { htmlAttributes = new { @class = "form-control" } })
+                    خیر
+                    @Html.ValidationMessageFor(model => model.person_risk.anty_thyr_drug , "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 ">
+            <div class="form-group">
+                @Html.LabelFor(model => model.person_risk.betadin_usage, htmlAttributes: new { @class = "control-label col-md-5" })
+                <div class="col-md-7">
+                    @Html.RadioButtonFor(model => model.person_risk.betadin_usage, new { htmlAttributes = new { @class = "form-control" } })
+                    بله
+                    @Html.RadioButtonFor(model => model.person_risk.betadin_usage, new { htmlAttributes = new { @class = "form-control" } })
+                    خیر
+                    @Html.ValidationMessageFor(model => model.person_risk.betadin_usage, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="margin-bottom:1px">
+        <div class="col-sm-3">
+            <div class="form-group">
+                @Html.LabelFor(model => model.person_risk.guatrogen_subs, htmlAttributes: new { @class = "control-label col-md-5" })
+                <div class="col-md-7">
+                    @Html.RadioButtonFor(model => model.person_risk.guatrogen_subs, new { htmlAttributes = new { @class = "form-control" } })
+                    بله
+                    @Html.RadioButtonFor(model => model.person_risk.guatrogen_subs, new { htmlAttributes = new { @class = "form-control" } })
+                    خیر
+                    @Html.ValidationMessageFor(model => model.person_risk.guatrogen_subs, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="form-group">
+                @Html.LabelFor(model => model.person_risk.high_iod, htmlAttributes: new { @class = "control-label col-md-5" })
+                <div class="col-md-7">
+                    @Html.RadioButtonFor(model => model.person_risk.high_iod, new { htmlAttributes = new { @class = "form-control" } })
+                    بله
+                    @Html.RadioButtonFor(model => model.person_risk.high_iod, new { htmlAttributes = new { @class = "form-control" } })
+                    خیر
+                    @Html.ValidationMessageFor(model => model.person_risk.high_iod, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 ">
+            <div class="form-group">
+                @Html.LabelFor(model => model.person_risk.amio_drug_use, htmlAttributes: new { @class = "control-label col-md-5" })
+                <div class="col-md-7">
+                    @Html.RadioButtonFor(model => model.person_risk.amio_drug_use, new { htmlAttributes = new { @class = "form-control" } })
+                    بله
+                    @Html.RadioButtonFor(model => model.person_risk.amio_drug_use, new { htmlAttributes = new { @class = "form-control" } })
+                    خیر
+                    @Html.ValidationMessageFor(model => model.person_risk.amio_drug_use, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3" style="text-align:center;margin-top:6px">
+            <button class="btn-success " type="submit" name="sabt"><i class="glyphicon glyphicon-ok"></i> ذخیره </button>
+        </div>
+        
+    </div>
+
+</div>
+

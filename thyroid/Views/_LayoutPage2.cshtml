@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap-rtl.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+    <title>@ViewBag.Title</title>
+    
+</head>
+<body>
+
+    <div class="navbar navbar-inverse">
+        <div >
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("دموگرافیک", "Demographic_V", "Home")</li>
+                    <li>@Html.ActionLink("داده های اولیه", "Initial_V", "Home")</li>
+                    <li>@Html.ActionLink("ارزیابی اولیه", "Eval_V", "Home")</li>
+                    <li>@Html.ActionLink("ریسکهای فاکتور", "Risk_V", "Home")</li>
+                    <li>@Html.ActionLink("اتیولوژی", "Etiology_V", "Home")</li>
+                    <li>@Html.ActionLink("داده های آزمایشگاهی", "Labdata_V", "Home")</li>                    
+                    <li>@Html.ActionLink("تصویربرداری", "Imagedata_V", "Home")</li>
+                    <li>@Html.ActionLink("تشخیص", "Diagnos_V", "Home")</li>                                        
+                    <li>@Html.ActionLink("پیگیری درمان", "Follow_V", "Home")</li>                   
+                    <li>@Html.ActionLink("آنومالی", "Anomaly_V", "Home")</li>
+                    <li>@Html.ActionLink("خروج", "MenuPage", "Home")</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container" >
+        @RenderBody()
+    </div>
+</body>
+</html>

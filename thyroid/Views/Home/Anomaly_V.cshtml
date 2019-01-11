@@ -1,0 +1,219 @@
+﻿@model thyroid.Models.Person
+
+@{
+    ViewBag.Title = "آنومالی های بیمار";
+    Layout = "~/Views/_LayoutPage2.cshtml";
+}
+
+<div style="border:2px solid lightblue;margin:4px">
+    <i style="margin-right:5px;font-weight:bold;">آنومالی های همراه بیمار</i>
+    <div class="row" style="margin-bottom:1px" dir="ltr">
+      
+        <div class="col-sm-2"></div>
+        <div class="col-sm-3 ">
+            <div class="form-group">
+                @Html.CheckBoxFor(model => model.person_anomaly.lang_retard, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.LabelFor(model => model.person_anomaly.lang_retard)
+                @*    @Html.EditorFor(model => model.person_etiology.evolotion_disorder, new { htmlAttributes = new { @class = "form-control" } })*@
+                @Html.ValidationMessageFor(model => model.person_anomaly.lang_retard, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+            <div class="col-sm-3">
+                <div class="form-group">
+                    @Html.CheckBoxFor(model => model.person_anomaly.mental_retard, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.LabelFor(model => model.person_anomaly.mental_retard)
+                    @*    @Html.EditorFor(model => model.person_etiology.evolotion_disorder, new { htmlAttributes = new { @class = "form-control" } })*@
+                    @Html.ValidationMessageFor(model => model.person_anomaly.mental_retard, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+
+        <div class="col-sm-3">
+            <div class="form-group">
+                @Html.CheckBoxFor(model => model.person_anomaly.develop_retard, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.LabelFor(model => model.person_anomaly.develop_retard)
+                @*    @Html.EditorFor(model => model.person_etiology.evolotion_disorder, new { htmlAttributes = new { @class = "form-control" } })*@
+                @Html.ValidationMessageFor(model => model.person_anomaly.develop_retard, "", new { @class = "text-danger" })
+            </div>
+        </div>  
+
+        <div class="col-sm-1" style="text-align:left;float:left">
+            1)
+        </div>
+
+        </div>
+
+   <div class="row" style="margin-bottom:1px" dir="ltr">
+       <div class="col-sm-2"></div>
+               <div class="col-sm-3 ">
+            <div class="form-group">
+                @Html.CheckBoxFor(model => model.person_anomaly.artial, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.LabelFor(model => model.person_anomaly.artial)
+                @*    @Html.EditorFor(model => model.person_etiology.evolotion_disorder, new { htmlAttributes = new { @class = "form-control" } })*@
+                @Html.ValidationMessageFor(model => model.person_anomaly.artial, "", new { @class = "text-danger" })                
+            </div>
+        </div>
+   
+       <div class="col-sm-3 ">
+           <div class="form-group">
+               @Html.CheckBoxFor(model => model.person_anomaly.ventricular, new { htmlAttributes = new { @class = "form-control" } })
+               @Html.LabelFor(model => model.person_anomaly.ventricular)
+               @*    @Html.EditorFor(model => model.person_etiology.evolotion_disorder, new { htmlAttributes = new { @class = "form-control" } })*@
+               @Html.ValidationMessageFor(model => model.person_anomaly.ventricular, "", new { @class = "text-danger" })
+           </div>
+       </div>
+
+       <div class="col-sm-3 ">
+           <div class="form-group">
+               @Html.CheckBoxFor(model => model.person_anomaly.congenital, new { htmlAttributes = new { @class = "form-control" } })
+               @Html.LabelFor(model => model.person_anomaly.congenitial)
+               @*    @Html.EditorFor(model => model.person_etiology.evolotion_disorder, new { htmlAttributes = new { @class = "form-control" } })*@
+               @Html.ValidationMessageFor(model => model.person_anomaly.congenitial, "", new { @class = "text-danger" })
+           </div>
+       </div>
+
+       <div class="col-sm-1" style="text-align:left;float:left">
+           2)
+       </div>      
+       </div>
+
+       <div class="row" style="margin-bottom:1px" dir="ltr">
+           
+           <div class="col-sm-2"></div>
+           <div class="col-sm-3 ">
+               <div class="form-group">
+                   @Html.CheckBoxFor(model => model.person_anomaly.ovale, new { htmlAttributes = new { @class = "form-control" } })
+                   @Html.LabelFor(model => model.person_anomaly.ovale)
+                   @*    @Html.EditorFor(model => model.person_etiology.evolotion_disorder, new { htmlAttributes = new { @class = "form-control" } })*@
+                   @Html.ValidationMessageFor(model => model.person_anomaly.ovale, "", new { @class = "text-danger" })
+               </div>
+           </div>
+
+           <div class="col-sm-3 ">
+               <div class="form-group">
+                   @Html.CheckBoxFor(model => model.person_anomaly.ductus, new { htmlAttributes = new { @class = "form-control" } })
+                   @Html.LabelFor(model => model.person_anomaly.ductus)
+                   @*    @Html.EditorFor(model => model.person_etiology.evolotion_disorder, new { htmlAttributes = new { @class = "form-control" } })*@
+                   @Html.ValidationMessageFor(model => model.person_anomaly.ductus, "", new { @class = "text-danger" })
+               </div>
+           </div>
+
+           <div class="col-sm-3 ">
+               <div class="form-group">
+                   @Html.CheckBoxFor(model => model.person_anomaly.aortic, new { htmlAttributes = new { @class = "form-control" } })
+                   @Html.LabelFor(model => model.person_anomaly.aortic)
+                   @*    @Html.EditorFor(model => model.person_etiology.evolotion_disorder, new { htmlAttributes = new { @class = "form-control" } })*@
+                   @Html.ValidationMessageFor(model => model.person_anomaly.aortic, "", new { @class = "text-danger" })
+               </div>
+           </div>
+           </div>
+
+           <div class="row" style="margin-bottom:1px" dir="ltr">
+               <div class="col-sm-8"></div>
+               <div class="col-sm-3 ">
+                   <div class="form-group">
+                       @Html.CheckBoxFor(model => model.person_anomaly.pulmonary, new { htmlAttributes = new { @class = "form-control" } })
+                       @Html.LabelFor(model => model.person_anomaly.pulmonary)
+                       @*    @Html.EditorFor(model => model.person_etiology.evolotion_disorder, new { htmlAttributes = new { @class = "form-control" } })*@
+                       @Html.ValidationMessageFor(model => model.person_anomaly.pulmonary, "", new { @class = "text-danger" })
+                   </div>
+               </div>
+           </div>
+
+    <div class="row" style="margin-bottom:1px" dir="ltr">
+        
+        <div class="col-sm-3 ">
+            <div class="form-group">
+                @Html.CheckBoxFor(model => model.person_anomaly.genito, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.LabelFor(model => model.person_anomaly.genito)
+                @*    @Html.EditorFor(model => model.person_etiology.evolotion_disorder, new { htmlAttributes = new { @class = "form-control" } })*@
+                @Html.ValidationMessageFor(model => model.person_anomaly.genito, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="col-sm-1">
+            5)
+        </div>
+
+
+        <div class="col-sm-3 ">
+            <div class="form-group">
+                @Html.CheckBoxFor(model => model.person_anomaly.hearing, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.LabelFor(model => model.person_anomaly.hearing)
+                @*    @Html.EditorFor(model => model.person_etiology.evolotion_disorder, new { htmlAttributes = new { @class = "form-control" } })*@
+                @Html.ValidationMessageFor(model => model.person_anomaly.hearing, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="col-sm-1">
+            4)
+        </div>
+
+        <div class="col-sm-3 ">
+            <div class="form-group">
+                @Html.CheckBoxFor(model => model.person_anomaly.microsomia, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.LabelFor(model => model.person_anomaly.microsomia)
+                @*    @Html.EditorFor(model => model.person_etiology.evolotion_disorder, new { htmlAttributes = new { @class = "form-control" } })*@
+                @Html.ValidationMessageFor(model => model.person_anomaly.microsomia, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="col-sm-1">
+            3)
+        </div>
+        </div>
+
+    <div class="row" style="margin-bottom:1px" dir="ltr">
+        
+                    <div class="col-sm-5 ">
+                <div class="form-group">
+                    @Html.CheckBoxFor(model => model.person_anomaly.kidney, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.LabelFor(model => model.person_anomaly.kidney)
+                    @*    @Html.EditorFor(model => model.person_etiology.evolotion_disorder, new { htmlAttributes = new { @class = "form-control" } })*@
+                    @Html.ValidationMessageFor(model => model.person_anomaly.kidney, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="col-sm-1">
+                7)
+            </div>
+
+            <div class="col-sm-5 ">
+                <div class="form-group">
+                    @Html.CheckBoxFor(model => model.person_anomaly.congenital, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.LabelFor(model => model.person_anomaly.congenital)
+                    @*    @Html.EditorFor(model => model.person_etiology.evolotion_disorder, new { htmlAttributes = new { @class = "form-control" } })*@
+                    @Html.ValidationMessageFor(model => model.person_anomaly.congenital, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="col-sm-1">
+                6)
+            </div>
+        </div>
+
+        <div class="row" style="margin-bottom:1px" dir="ltr">
+
+            <div class="col-sm-5"></div>
+            <div class="col-sm-3" style="text-align:center;margin-top:6px">
+                <button class="btn-success " type="submit" name="sabt"><i class="glyphicon glyphicon-ok"></i> ذخیره </button>
+            </div>
+
+            <div class="col-sm-3 ">
+                <div class="form-group">
+                    @Html.CheckBoxFor(model => model.person_anomaly.other, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.LabelFor(model => model.person_anomaly.other)
+                    @*    @Html.EditorFor(model => model.person_etiology.evolotion_disorder, new { htmlAttributes = new { @class = "form-control" } })*@
+                    @Html.ValidationMessageFor(model => model.person_anomaly.other, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="col-sm-1">
+                8)
+            </div>
+            
+        </div>
+    </div>
+
+

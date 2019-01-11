@@ -1,0 +1,99 @@
+﻿@model thyroid.Models.Person
+
+@{
+    ViewBag.Title = "داده های آزمایشگاهی";
+    Layout = "~/Views/_LayoutPage2.cshtml";
+}
+
+<div style="border:2px solid lightblue;margin:4px">
+    <i style="margin-right:5px;font-weight:bold;">مجموعه عناصر داده آزمایشگاهی</i>
+    <div class="row" style="margin-bottom:1px">
+        <div class="col-sm-3">
+            <div class="form-group">
+                @Html.LabelFor(model => model.person_labdata.tsh_filter, htmlAttributes: new { @class = "control-label col-md-5" })
+                <div class="col-md-7">
+                    @Html.EditorFor(model => model.person_labdata.tsh_filter, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.person_labdata.tsh_filter, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="form-group">
+                @Html.LabelFor(model => model.person_labdata.t3ru_serom, htmlAttributes: new { @class = "control-label col-md-5" })
+                <div class="col-md-7">
+                    @Html.EditorFor(model => model.person_labdata.t3ru_serom, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.person_labdata.t3ru_serom, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 ">
+            <div class="form-group">
+                @Html.LabelFor(model => model.person_labdata.tsh_seromdiag, htmlAttributes: new { @class = "control-label col-md-4" })
+                <div class="col-md-8">
+                    @*    @Html.EditorFor(model => model.person_etiology.evolotion_disorder, new { htmlAttributes = new { @class = "form-control" } })*@
+                    @Html.RadioButtonFor(model => model.person_labdata.tsh_seromdiag, new { htmlAttributes = new { @class = "form-control" } })
+                    مثبت
+                    @Html.RadioButtonFor(model => model.person_labdata.tsh_seromdiag, new { htmlAttributes = new { @class = "form-control" } })
+                    منفی
+                    @Html.ValidationMessageFor(model => model.person_labdata.tsh_seromdiag, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 ">
+            <div class="form-group">
+                @Html.LabelFor(model => model.person_labdata.t4_seromdiag, htmlAttributes: new { @class = "control-label col-md-4" })
+                <div class="col-md-8">
+                    @*    @Html.EditorFor(model => model.person_etiology.evolotion_disorder, new { htmlAttributes = new { @class = "form-control" } })*@
+                    @Html.RadioButtonFor(model => model.person_labdata.t4_seromdiag, new { htmlAttributes = new { @class = "form-control" } })
+                    مثبت
+                    @Html.RadioButtonFor(model => model.person_labdata.t4_seromdiag, new { htmlAttributes = new { @class = "form-control" } })
+                    منفی
+                    @Html.ValidationMessageFor(model => model.person_labdata.t4_seromdiag, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+        </div>
+
+    <div class="row" style="margin-bottom:1px">
+       
+       
+
+        <div class="col-sm-3 ">
+            <div class="form-group">
+                @Html.LabelFor(model => model.person_labdata.fteet4_serom, htmlAttributes: new { @class = "control-label col-md-5" })
+                <div class="col-md-7">
+                    @Html.EditorFor(model => model.person_labdata.fteet4_serom, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.person_labdata.fteet4_serom, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 ">
+            <div class="form-group">
+                @Html.LabelFor(model => model.person_labdata.tsh_level, htmlAttributes: new { @class = "control-label col-md-5" })
+                <div class="col-md-7">
+                    @Html.EditorFor(model => model.person_labdata.tsh_level, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.person_labdata.tsh_level, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 ">
+            <div class="form-group">
+                @Html.LabelFor(model => model.person_labdata.t4_freet4, htmlAttributes: new { @class = "control-label col-md-5" })
+                <div class="col-md-7">
+                    @Html.EditorFor(model => model.person_labdata.t4_freet4, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.person_labdata.t4_freet4, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3" style="text-align:center;margin-top:6px">
+            <button class="btn-success " type="submit" name="sabt"><i class="glyphicon glyphicon-ok"></i> ذخیره </button>
+        </div>
+    </div>
+
+</div>

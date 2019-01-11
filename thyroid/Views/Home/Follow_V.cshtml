@@ -1,0 +1,59 @@
+﻿@model thyroid.Models.Person
+
+@{
+    ViewBag.Title = "پیگیری بیماری";
+    Layout = "~/Views/_LayoutPage2.cshtml";
+}
+
+<div style="border:2px solid lightblue;margin:4px">
+    <i style="margin-right:5px;font-weight:bold;">داده های ترخیص و پیگیری بیماری(روند درمان)</i>
+
+    <div class="row" style="margin-bottom:1px;">
+        <div class="col-sm-3">
+            <div class="form-group">
+               @Html.CheckBoxFor(model => model.person_follow.treat_cut, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.LabelFor(model => model.person_follow.treat_cut)                
+                    @*    @Html.EditorFor(model => model.person_etiology.evolotion_disorder, new { htmlAttributes = new { @class = "form-control" } })*@                                                         
+                    @Html.ValidationMessageFor(model => model.person_follow.treat_cut, "", new { @class = "text-danger" })                
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="form-group">
+                @Html.CheckBoxFor(model => model.person_follow.treating, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.LabelFor(model => model.person_follow.treating)                
+                    @*    @Html.EditorFor(model => model.person_etiology.evolotion_disorder, new { htmlAttributes = new { @class = "form-control" } })*@                                                      
+                    @Html.ValidationMessageFor(model => model.person_follow.treating, "", new { @class = "text-danger" })                
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="form-group">
+                @Html.CheckBoxFor(model => model.person_follow.divert_to, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.LabelFor(model => model.person_follow.divert_to)
+                @*    @Html.EditorFor(model => model.person_etiology.evolotion_disorder, new { htmlAttributes = new { @class = "form-control" } })*@
+
+                @Html.ValidationMessageFor(model => model.person_follow.divert_to, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+        <div class="col-sm-2">
+            <div class="form-group">
+                @Html.CheckBoxFor(model => model.person_follow.migration, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.LabelFor(model => model.person_follow.migration)
+             
+                    @*    @Html.EditorFor(model => model.person_etiology.evolotion_disorder, new { htmlAttributes = new { @class = "form-control" } })*@                    
+                    
+                    @Html.ValidationMessageFor(model => model.person_follow.migration, "", new { @class = "text-danger" })
+                </div>
+            </div>
+                
+
+        <div class="col-sm-1" style="text-align:center;margin-top:6px">
+            <button class="btn-success " type="submit" name="sabt"><i class="glyphicon glyphicon-ok"></i> ذخیره </button>
+        </div>
+
+        </div>
+    </div>
+

@@ -1,0 +1,36 @@
+c:\users\ams\documents\visual studio 2013\Projects\thyroid\thyroid\bin\thyroid.dll.config
+c:\users\ams\documents\visual studio 2013\Projects\thyroid\thyroid\bin\thyroid.dll
+c:\users\ams\documents\visual studio 2013\Projects\thyroid\thyroid\bin\thyroid.pdb
+c:\users\ams\documents\visual studio 2013\Projects\thyroid\thyroid\bin\System.Web.Helpers.dll
+c:\users\ams\documents\visual studio 2013\Projects\thyroid\thyroid\bin\System.Web.Mvc.dll
+c:\users\ams\documents\visual studio 2013\Projects\thyroid\thyroid\bin\System.Web.Razor.dll
+c:\users\ams\documents\visual studio 2013\Projects\thyroid\thyroid\bin\System.Web.Webpages.Deployment.dll
+c:\users\ams\documents\visual studio 2013\Projects\thyroid\thyroid\bin\System.Web.Webpages.dll
+c:\users\ams\documents\visual studio 2013\Projects\thyroid\thyroid\bin\System.Web.Webpages.Razor.dll
+c:\users\ams\documents\visual studio 2013\Projects\thyroid\thyroid\bin\System.Web.Razor.xml
+c:\users\ams\documents\visual studio 2013\Projects\thyroid\thyroid\bin\System.Web.Webpages.xml
+c:\users\ams\documents\visual studio 2013\Projects\thyroid\thyroid\bin\System.Web.Webpages.Deployment.xml
+c:\users\ams\documents\visual studio 2013\Projects\thyroid\thyroid\bin\System.Web.Webpages.Razor.xml
+c:\users\ams\documents\visual studio 2013\Projects\thyroid\thyroid\bin\System.Web.Helpers.xml
+c:\users\ams\documents\visual studio 2013\Projects\thyroid\thyroid\bin\System.Web.Mvc.xml
+c:\users\ams\documents\visual studio 2013\Projects\thyroid\thyroid\obj\Debug\thyroid.dll
+c:\users\ams\documents\visual studio 2013\Projects\thyroid\thyroid\obj\Debug\thyroid.pdb
+C:\Users\ams\documents\visual studio 2013\Projects\thyroid\thyroid\obj\Debug\thyroid.csprojResolveAssemblyReference.cache
+F:\thyroid\thyroid\bin\thyroid.dll.config
+F:\thyroid\thyroid\bin\thyroid.dll
+F:\thyroid\thyroid\bin\thyroid.pdb
+F:\thyroid\thyroid\bin\System.Web.Helpers.dll
+F:\thyroid\thyroid\bin\System.Web.Mvc.dll
+F:\thyroid\thyroid\bin\System.Web.Razor.dll
+F:\thyroid\thyroid\bin\System.Web.Webpages.Deployment.dll
+F:\thyroid\thyroid\bin\System.Web.Webpages.dll
+F:\thyroid\thyroid\bin\System.Web.Webpages.Razor.dll
+F:\thyroid\thyroid\bin\System.Web.Razor.xml
+F:\thyroid\thyroid\bin\System.Web.Webpages.xml
+F:\thyroid\thyroid\bin\System.Web.Webpages.Deployment.xml
+F:\thyroid\thyroid\bin\System.Web.Webpages.Razor.xml
+F:\thyroid\thyroid\bin\System.Web.Helpers.xml
+F:\thyroid\thyroid\bin\System.Web.Mvc.xml
+F:\thyroid\thyroid\obj\Debug\thyroid.csprojResolveAssemblyReference.cache
+F:\thyroid\thyroid\obj\Debug\thyroid.dll
+F:\thyroid\thyroid\obj\Debug\thyroid.pdb
